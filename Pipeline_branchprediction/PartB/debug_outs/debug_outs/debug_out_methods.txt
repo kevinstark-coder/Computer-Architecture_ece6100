@@ -1,0 +1,103 @@
+/**
+ * Print out the state of the pipeline latches for debugging purposes.
+ * 
+ * You may use this function to help debug your pipeline implementation, but
+ * please remove calls to this function before submitting the lab.
+ * 
+ * @param p the pipeline
+ */
+void pipe_print_state(Pipeline *p)
+{
+    printf("\n--------------------------------------------\n");
+    printf("Cycle count: %lu, retired instructions: %lu\n",
+           (unsigned long)p->stat_num_cycle,
+           (unsigned long)p->stat_retired_inst);
+
+    // Print table header
+    for (uint8_t latch_type = 0; latch_type < NUM_LATCH_TYPES; latch_type++)
+    {
+        switch (latch_type)
+        {
+        case IF_LATCH:
+            printf(" IF:    ");
+            break;
+        case ID_LATCH:
+            printf(" ID:    ");
+            break;
+        case EX_LATCH:
+            printf(" EX:    ");
+            break;
+        case MA_LATCH:
+            printf(" MA:    ");
+            break;
+        default:
+            printf(" ------ ");
+        }
+    }
+    printf("\n");
+
+    // Print row for each lane in pipeline width
+    for (uint8_t i = 0; i < PIPE_WIDTH; i++)
+    {
+        for (uint8_t latch_type = 0; latch_type < NUM_LATCH_TYPES;
+             latch_type++)
+        {
+            if (p->pipe_latch[latch_type][i].valid)
+            {
+                printf(" %6lu ",
+                       (unsigned long)p->pipe_latch[latch_type][i].op_id);
+            }
+            else
+            {
+                printf(" ------ ");
+            }
+        }
+        printf("\n");
+    }
+    for (uint8_t i = 0; i < PIPE_WIDTH; i++)
+    {
+        for (uint8_t latch_type = 0; latch_type < NUM_LATCH_TYPES;
+             latch_type++)
+        {
+            if (p->pipe_latch[latch_type][i].valid)
+            {
+                int dest = (p->pipe_latch[latch_type][i].trace_rec.dest_needed) ? 
+                        p->pipe_latch[latch_type][i].trace_rec.dest_reg : -1;
+                int src1 = (p->pipe_latch[latch_type][i].trace_rec.src1_needed) ? 
+                        p->pipe_latch[latch_type][i].trace_rec.src1_reg : -1;
+                int src2 = (p->pipe_latch[latch_type][i].trace_rec.src2_needed) ? 
+                        p->pipe_latch[latch_type][i].trace_rec.src2_reg : -1;
+                int cc_read = p->pipe_latch[latch_type][i].trace_rec.cc_read;
+                int cc_write = p->pipe_latch[latch_type][i].trace_rec.cc_write;
+                int br_dir = p->pipe_latch[latch_type][i].trace_rec.br_dir;
+
+                const char *op_type;
+                if (p->pipe_latch[latch_type][i].trace_rec.op_type == OP_ALU)
+                    op_type = "ALU";
+                else if (p->pipe_latch[latch_type][i].trace_rec.op_type == OP_LD)
+                    op_type = "LD";
+                else if (p->pipe_latch[latch_type][i].trace_rec.op_type == OP_ST)
+                    op_type = "ST";
+                else if (p->pipe_latch[latch_type][i].trace_rec.op_type == OP_CBR)
+                    op_type = "BR";
+                else
+                    op_type = "OTHER";
+
+                printf("(%lu : %s) dest: %d, src1: %d, src2: %d , ccread: %d, ccwrite: %d, br_dir: %d\n",
+                       (unsigned long)p->pipe_latch[latch_type][i].op_id,
+                       op_type,
+                       dest,
+                       src1,
+                       src2,
+                       cc_read,
+                       cc_write,
+                       br_dir);
+            }
+            else
+            {
+                printf(" ------ \n");
+            }
+        }
+        printf("\n");
+    }
+}

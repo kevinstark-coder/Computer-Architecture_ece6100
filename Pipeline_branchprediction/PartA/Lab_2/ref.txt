@@ -1,0 +1,1367 @@
+** PIPELINE IS 1 WIDE **
+
+case k
+0     IF      0
+0     ID      0
+0     EX      0
+0     MA      0
+
+--------------------------------------------
+Cycle count: 1, retired instructions: 0
+ IF:     ID:     EX:     MA:
+      1  ------  ------  ------
+
+case k
+1     IF      0
+1     ID      0
+0     EX      0
+0     MA      0
+
+--------------------------------------------
+Cycle count: 2, retired instructions: 0
+ IF:     ID:     EX:     MA:
+      2       1  ------  ------
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+0     MA      0
+
+--------------------------------------------
+Cycle count: 3, retired instructions: 0
+ IF:     ID:     EX:     MA:
+      3       2       1  ------
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 4, retired instructions: 0
+ IF:     ID:     EX:     MA:
+      4       3       2       1
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 5, retired instructions: 1
+ IF:     ID:     EX:     MA:
+      5       4       3       2
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 6, retired instructions: 2
+ IF:     ID:     EX:     MA:
+      6       5       4       3
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 7, retired instructions: 3
+ IF:     ID:     EX:     MA:
+      7       6       5       4
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 8, retired instructions: 4
+ IF:     ID:     EX:     MA:
+      8       7       6       5
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 9, retired instructions: 5
+ IF:     ID:     EX:     MA:
+      9       8       7       6
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 10, retired instructions: 6
+ IF:     ID:     EX:     MA:
+     10       9       8       7
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 11, retired instructions: 7
+ IF:     ID:     EX:     MA:
+     11      10       9       8
+
+case 5
+one
+1     IF      0
+1     ID      0
+1     EX      1
+1     MA      0
+
+--------------------------------------------
+Cycle count: 12, retired instructions: 8
+ IF:     ID:     EX:     MA:
+     12      11      10       9
+
+case 6
+one
+1     IF      0
+1     ID      0
+0     EX      1
+1     MA      1
+
+--------------------------------------------
+Cycle count: 13, retired instructions: 9
+ IF:     ID:     EX:     MA:
+     12      11  ------      10
+
+case k
+1     IF      0
+1     ID      0
+0     EX      0
+0     MA      1
+
+--------------------------------------------
+Cycle count: 14, retired instructions: 10
+ IF:     ID:     EX:     MA:
+     12      11  ------  ------
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+0     MA      0
+
+--------------------------------------------
+Cycle count: 15, retired instructions: 10
+ IF:     ID:     EX:     MA:
+     13      12      11  ------
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 16, retired instructions: 10
+ IF:     ID:     EX:     MA:
+     14      13      12      11
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 17, retired instructions: 11
+ IF:     ID:     EX:     MA:
+     15      14      13      12
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 18, retired instructions: 12
+ IF:     ID:     EX:     MA:
+     16      15      14      13
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 19, retired instructions: 13
+ IF:     ID:     EX:     MA:
+     17      16      15      14
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 20, retired instructions: 14
+ IF:     ID:     EX:     MA:
+     18      17      16      15
+
+case 5
+one
+1     IF      0
+1     ID      0
+1     EX      1
+1     MA      0
+
+--------------------------------------------
+Cycle count: 21, retired instructions: 15
+ IF:     ID:     EX:     MA:
+     19      18      17      16
+
+case 6
+one
+1     IF      0
+1     ID      0
+0     EX      1
+1     MA      1
+
+--------------------------------------------
+Cycle count: 22, retired instructions: 16
+ IF:     ID:     EX:     MA:
+     19      18  ------      17
+
+case k
+1     IF      0
+1     ID      0
+0     EX      0
+0     MA      1
+
+--------------------------------------------
+Cycle count: 23, retired instructions: 17
+ IF:     ID:     EX:     MA:
+     19      18  ------  ------
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+0     MA      0
+
+--------------------------------------------
+Cycle count: 24, retired instructions: 17
+ IF:     ID:     EX:     MA:
+     20      19      18  ------
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 25, retired instructions: 17
+ IF:     ID:     EX:     MA:
+     21      20      19      18
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 26, retired instructions: 18
+ IF:     ID:     EX:     MA:
+     22      21      20      19
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 27, retired instructions: 19
+ IF:     ID:     EX:     MA:
+     23      22      21      20
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 28, retired instructions: 20
+ IF:     ID:     EX:     MA:
+     24      23      22      21
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 29, retired instructions: 21
+ IF:     ID:     EX:     MA:
+     25      24      23      22
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 30, retired instructions: 22
+ IF:     ID:     EX:     MA:
+     26      25      24      23
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 31, retired instructions: 23
+ IF:     ID:     EX:     MA:
+     27      26      25      24
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 32, retired instructions: 24
+ IF:     ID:     EX:     MA:
+     28      27      26      25
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 33, retired instructions: 25
+ IF:     ID:     EX:     MA:
+     29      28      27      26
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 34, retired instructions: 26
+ IF:     ID:     EX:     MA:
+     30      29      28      27
+
+case 6
+one
+1     IF      0
+1     ID      0
+1     EX      1
+1     MA      0
+
+--------------------------------------------
+Cycle count: 35, retired instructions: 27
+ IF:     ID:     EX:     MA:
+     31      30      29      28
+
+case k
+1     IF      0
+1     ID      0
+0     EX      0
+1     MA      1
+
+--------------------------------------------
+Cycle count: 36, retired instructions: 28
+ IF:     ID:     EX:     MA:
+     31      30  ------      29
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+0     MA      0
+
+--------------------------------------------
+Cycle count: 37, retired instructions: 29
+ IF:     ID:     EX:     MA:
+     32      31      30  ------
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 38, retired instructions: 29
+ IF:     ID:     EX:     MA:
+     33      32      31      30
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 39, retired instructions: 30
+ IF:     ID:     EX:     MA:
+     34      33      32      31
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 40, retired instructions: 31
+ IF:     ID:     EX:     MA:
+     35      34      33      32
+
+case 5
+one
+1     IF      0
+1     ID      0
+1     EX      1
+1     MA      0
+
+--------------------------------------------
+Cycle count: 41, retired instructions: 32
+ IF:     ID:     EX:     MA:
+     36      35      34      33
+
+case 6
+one
+1     IF      0
+1     ID      0
+0     EX      1
+1     MA      1
+
+--------------------------------------------
+Cycle count: 42, retired instructions: 33
+ IF:     ID:     EX:     MA:
+     36      35  ------      34
+
+case k
+1     IF      0
+1     ID      0
+0     EX      0
+0     MA      1
+
+--------------------------------------------
+Cycle count: 43, retired instructions: 34
+ IF:     ID:     EX:     MA:
+     36      35  ------  ------
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+0     MA      0
+
+--------------------------------------------
+Cycle count: 44, retired instructions: 34
+ IF:     ID:     EX:     MA:
+     37      36      35  ------
+
+case 5
+one
+1     IF      0
+1     ID      0
+1     EX      1
+1     MA      0
+
+--------------------------------------------
+Cycle count: 45, retired instructions: 34
+ IF:     ID:     EX:     MA:
+     38      37      36      35
+
+case 6
+one
+1     IF      0
+1     ID      0
+0     EX      1
+1     MA      1
+
+--------------------------------------------
+Cycle count: 46, retired instructions: 35
+ IF:     ID:     EX:     MA:
+     38      37  ------      36
+
+case k
+1     IF      0
+1     ID      0
+0     EX      0
+0     MA      1
+
+--------------------------------------------
+Cycle count: 47, retired instructions: 36
+ IF:     ID:     EX:     MA:
+     38      37  ------  ------
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+0     MA      0
+
+--------------------------------------------
+Cycle count: 48, retired instructions: 36
+ IF:     ID:     EX:     MA:
+     39      38      37  ------
+
+case 5
+one
+1     IF      0
+1     ID      0
+1     EX      1
+1     MA      0
+
+--------------------------------------------
+Cycle count: 49, retired instructions: 36
+ IF:     ID:     EX:     MA:
+     40      39      38      37
+
+case 6
+one
+1     IF      0
+1     ID      0
+0     EX      1
+1     MA      1
+
+--------------------------------------------
+Cycle count: 50, retired instructions: 37
+ IF:     ID:     EX:     MA:
+     40      39  ------      38
+
+case k
+1     IF      0
+1     ID      0
+0     EX      0
+0     MA      1
+
+--------------------------------------------
+Cycle count: 51, retired instructions: 38
+ IF:     ID:     EX:     MA:
+     40      39  ------  ------
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+0     MA      0
+
+--------------------------------------------
+Cycle count: 52, retired instructions: 38
+ IF:     ID:     EX:     MA:
+     41      40      39  ------
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 53, retired instructions: 38
+ IF:     ID:     EX:     MA:
+     42      41      40      39
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 54, retired instructions: 39
+ IF:     ID:     EX:     MA:
+     43      42      41      40
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 55, retired instructions: 40
+ IF:     ID:     EX:     MA:
+     44      43      42      41
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 56, retired instructions: 41
+ IF:     ID:     EX:     MA:
+     45      44      43      42
+
+case 6
+one
+1     IF      0
+1     ID      0
+1     EX      1
+1     MA      0
+
+--------------------------------------------
+Cycle count: 57, retired instructions: 42
+ IF:     ID:     EX:     MA:
+     46      45      44      43
+
+case k
+1     IF      0
+1     ID      0
+0     EX      0
+1     MA      1
+
+--------------------------------------------
+Cycle count: 58, retired instructions: 43
+ IF:     ID:     EX:     MA:
+     46      45  ------      44
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+0     MA      0
+
+--------------------------------------------
+Cycle count: 59, retired instructions: 44
+ IF:     ID:     EX:     MA:
+     47      46      45  ------
+
+case 5
+one
+1     IF      0
+1     ID      0
+1     EX      1
+1     MA      0
+
+--------------------------------------------
+Cycle count: 60, retired instructions: 44
+ IF:     ID:     EX:     MA:
+     48      47      46      45
+
+case 6
+one
+1     IF      0
+1     ID      0
+0     EX      1
+1     MA      1
+
+--------------------------------------------
+Cycle count: 61, retired instructions: 45
+ IF:     ID:     EX:     MA:
+     48      47  ------      46
+
+case k
+1     IF      0
+1     ID      0
+0     EX      0
+0     MA      1
+
+--------------------------------------------
+Cycle count: 62, retired instructions: 46
+ IF:     ID:     EX:     MA:
+     48      47  ------  ------
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+0     MA      0
+
+--------------------------------------------
+Cycle count: 63, retired instructions: 46
+ IF:     ID:     EX:     MA:
+     49      48      47  ------
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 64, retired instructions: 46
+ IF:     ID:     EX:     MA:
+     50      49      48      47
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 65, retired instructions: 47
+ IF:     ID:     EX:     MA:
+     51      50      49      48
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 66, retired instructions: 48
+ IF:     ID:     EX:     MA:
+     52      51      50      49
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 67, retired instructions: 49
+ IF:     ID:     EX:     MA:
+     53      52      51      50
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 68, retired instructions: 50
+ IF:     ID:     EX:     MA:
+     54      53      52      51
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 69, retired instructions: 51
+ IF:     ID:     EX:     MA:
+     55      54      53      52
+
+case 5
+one
+1     IF      0
+1     ID      0
+1     EX      1
+1     MA      0
+
+--------------------------------------------
+Cycle count: 70, retired instructions: 52
+ IF:     ID:     EX:     MA:
+     56      55      54      53
+
+case 6
+one
+1     IF      0
+1     ID      0
+0     EX      1
+1     MA      1
+
+--------------------------------------------
+Cycle count: 71, retired instructions: 53
+ IF:     ID:     EX:     MA:
+     56      55  ------      54
+
+case k
+1     IF      0
+1     ID      0
+0     EX      0
+0     MA      1
+
+--------------------------------------------
+Cycle count: 72, retired instructions: 54
+ IF:     ID:     EX:     MA:
+     56      55  ------  ------
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+0     MA      0
+
+--------------------------------------------
+Cycle count: 73, retired instructions: 54
+ IF:     ID:     EX:     MA:
+     57      56      55  ------
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 74, retired instructions: 54
+ IF:     ID:     EX:     MA:
+     58      57      56      55
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 75, retired instructions: 55
+ IF:     ID:     EX:     MA:
+     59      58      57      56
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 76, retired instructions: 56
+ IF:     ID:     EX:     MA:
+     60      59      58      57
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 77, retired instructions: 57
+ IF:     ID:     EX:     MA:
+     61      60      59      58
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 78, retired instructions: 58
+ IF:     ID:     EX:     MA:
+     62      61      60      59
+
+case 5
+one
+1     IF      0
+1     ID      0
+1     EX      1
+1     MA      0
+
+--------------------------------------------
+Cycle count: 79, retired instructions: 59
+ IF:     ID:     EX:     MA:
+     63      62      61      60
+
+case 6
+one
+1     IF      0
+1     ID      0
+0     EX      1
+1     MA      1
+
+--------------------------------------------
+Cycle count: 80, retired instructions: 60
+ IF:     ID:     EX:     MA:
+     63      62  ------      61
+
+case k
+1     IF      0
+1     ID      0
+0     EX      0
+0     MA      1
+
+--------------------------------------------
+Cycle count: 81, retired instructions: 61
+ IF:     ID:     EX:     MA:
+     63      62  ------  ------
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+0     MA      0
+
+--------------------------------------------
+Cycle count: 82, retired instructions: 61
+ IF:     ID:     EX:     MA:
+     64      63      62  ------
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 83, retired instructions: 61
+ IF:     ID:     EX:     MA:
+     65      64      63      62
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 84, retired instructions: 62
+ IF:     ID:     EX:     MA:
+     66      65      64      63
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 85, retired instructions: 63
+ IF:     ID:     EX:     MA:
+     67      66      65      64
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 86, retired instructions: 64
+ IF:     ID:     EX:     MA:
+     68      67      66      65
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 87, retired instructions: 65
+ IF:     ID:     EX:     MA:
+     69      68      67      66
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 88, retired instructions: 66
+ IF:     ID:     EX:     MA:
+     70      69      68      67
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 89, retired instructions: 67
+ IF:     ID:     EX:     MA:
+     71      70      69      68
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 90, retired instructions: 68
+ IF:     ID:     EX:     MA:
+     72      71      70      69
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 91, retired instructions: 69
+ IF:     ID:     EX:     MA:
+     73      72      71      70
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 92, retired instructions: 70
+ IF:     ID:     EX:     MA:
+     74      73      72      71
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 93, retired instructions: 71
+ IF:     ID:     EX:     MA:
+     75      74      73      72
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 94, retired instructions: 72
+ IF:     ID:     EX:     MA:
+     76      75      74      73
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 95, retired instructions: 73
+ IF:     ID:     EX:     MA:
+     77      76      75      74
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 96, retired instructions: 74
+ IF:     ID:     EX:     MA:
+     78      77      76      75
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 97, retired instructions: 75
+ IF:     ID:     EX:     MA:
+     79      78      77      76
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 98, retired instructions: 76
+ IF:     ID:     EX:     MA:
+     80      79      78      77
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 99, retired instructions: 77
+ IF:     ID:     EX:     MA:
+     81      80      79      78
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 100, retired instructions: 78
+ IF:     ID:     EX:     MA:
+     82      81      80      79
+
+.case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 101, retired instructions: 79
+ IF:     ID:     EX:     MA:
+     83      82      81      80
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 102, retired instructions: 80
+ IF:     ID:     EX:     MA:
+     84      83      82      81
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 103, retired instructions: 81
+ IF:     ID:     EX:     MA:
+     85      84      83      82
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 104, retired instructions: 82
+ IF:     ID:     EX:     MA:
+     86      85      84      83
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 105, retired instructions: 83
+ IF:     ID:     EX:     MA:
+     87      86      85      84
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 106, retired instructions: 84
+ IF:     ID:     EX:     MA:
+     88      87      86      85
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 107, retired instructions: 85
+ IF:     ID:     EX:     MA:
+     89      88      87      86
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 108, retired instructions: 86
+ IF:     ID:     EX:     MA:
+     90      89      88      87
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 109, retired instructions: 87
+ IF:     ID:     EX:     MA:
+     91      90      89      88
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 110, retired instructions: 88
+ IF:     ID:     EX:     MA:
+     92      91      90      89
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 111, retired instructions: 89
+ IF:     ID:     EX:     MA:
+     93      92      91      90
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 112, retired instructions: 90
+ IF:     ID:     EX:     MA:
+     94      93      92      91
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 113, retired instructions: 91
+ IF:     ID:     EX:     MA:
+     95      94      93      92
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 114, retired instructions: 92
+ IF:     ID:     EX:     MA:
+     96      95      94      93
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 115, retired instructions: 93
+ IF:     ID:     EX:     MA:
+     97      96      95      94
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 116, retired instructions: 94
+ IF:     ID:     EX:     MA:
+     98      97      96      95
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 117, retired instructions: 95
+ IF:     ID:     EX:     MA:
+     99      98      97      96
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 118, retired instructions: 96
+ IF:     ID:     EX:     MA:
+    100      99      98      97
+
+case k
+1     IF      0
+1     ID      0
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 119, retired instructions: 97
+ IF:     ID:     EX:     MA:
+ ------     100      99      98
+
+case k
+0     IF      160
+0     ID      160
+1     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 120, retired instructions: 98
+ IF:     ID:     EX:     MA:
+ ------  ------     100      99
+
+case k
+0     IF      160
+0     ID      160
+0     EX      0
+1     MA      0
+
+--------------------------------------------
+Cycle count: 121, retired instructions: 99
+ IF:     ID:     EX:     MA:
+ ------  ------  ------     100
+
+case k
+0     IF      160
+0     ID      160
+0     EX      0
+0     MA      0
+
+--------------------------------------------
+Cycle count: 122, retired instructions: 100
+ IF:     ID:     EX:     MA:
+ ------  ------  ------  ------
+
+
+
+LAB2_NUM_INST                    :        100
+LAB2_NUM_CYCLES                  :        122
+LAB2_CPI                         :      1.220
